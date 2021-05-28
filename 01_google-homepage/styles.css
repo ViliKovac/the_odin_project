@@ -1,29 +1,110 @@
                         /*all*/
 
+* {
+        box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+}
+
+button{
+    display: inline;
+    border: none;
+    background-color:#F5f5f5;
+    padding: .8vw;
+   
+    border-style: solid;
+    border-color: #F5f5f5;
+    border-radius: 4px;
+}
+
+button:hover{
+   box-shadow: black;
+   
+   
+}
+
                     /*------------------*/
 
 
                           /*header*/
+
+
+header{
+    width:100%;
+}
 header nav ul{
     list-style-type: none;
+    
+    
+}
+
+nav li{
+    display: inline-block;
+  
+    padding: 8px;
+}
+
+nav li a{
     text-decoration: none;
+    color: black;
 }
 
 
-                    /*------------------*/
-
+.h-left-ul{
+    float: left;
+}
+            
+.h-right-ul{
+    float: right;
+}
 
                             /*main*/
+
+
+main{
+    padding-top: 25vh;
+    text-align: center; /*centrira input*/
+    margin-bottom: 20vh;
+}
+
 .google-image  { 
 display: block;
 margin-left: auto;              
 margin-right: auto;                      
+
 }
+
+
 #search-bar{
-    
-display: block;    
+box-sizing: border-box;    
 width: 50vw;
-margin: 1.5em auto auto auto; /*top right bottom left*/
-padding: 1vw 0 1vw 0 ;
+padding-top: 1vh;
+padding-bottom: 1vh;
+padding-left: 0.5vw;
 }
+
+#search-bar input:hover{
+    box-shadow: 8px 20px;
+}
+
+.search-buttons{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: inline-block;
+}
+
                     /*------------------*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #F5f5f5;
+    
+}
+
+                    
