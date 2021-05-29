@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Google</title>
-    <!-- referenca https://web.archive.org/web/20191130234759if_/https://www.google.com/ -->
+    <!-- reference: https://web.archive.org/web/20191130234759if_/https://www.google.com/ -->
 </head>
 
 <body>
@@ -16,22 +16,21 @@
         <nav>
 
             <ul class="left-ul">
-                <li><a href="#About">About</a></li>
+                <li><a href="https://about.google/">About</a></li>
                 <li><a href="#">Store</a></li>
             </ul>
 
             <ul class="right-ul">
-                <li><a href="#">Gmail</a></li>
+                <li><a href="https://www.google.com/">Gmail</a></li>
 
-                <li><a href="#">Images</a></li>
+                <li><a href="#Images">Images</a></li>
 
-                <li id="app-li"><a id="app-icon" href="https://www.google.com/intl/en/about/products?tab=wh" title="apps" class="material-icons">apps</a></li>
+                <li id="app-li"><a id="app-icon" href="https://www.google.com/intl/en/about/products?tab=wh" title="Apps" class="material-icons">apps</a></li>
 
                 <li>
-
-                    <form action="Sing In"><button class="signin-button" type="button">Sign In</button></form>
+                    <form action="https://accounts.google.com/signin/v2"><button class="signin-button" type="submit">
+                            Sign In</button></form>
                 </li>
-
             </ul>
         </nav>
 
@@ -43,21 +42,13 @@
 
         <form class="search-form" action="search">
             <button class="search-icon" disabled>
-                <img
-                  src="images/google-search.png"
-                  alt="search"
-                />
-              </button>
+                <img src="images/google-search.png" alt="search" />
+            </button>
             <input type="text" placeholder="Search" onfocus="this.placeholder = ''">
-
+            <!-- making search bar not having a border on focus -->
             <button class="mic-icon">
-                <img
-                  src="images/google-microphone.png"
-                  alt="mic"
-                />
-              </button>
-
-
+                <img src="images/google-microphone.png" alt="mic" />
+            </button>
 
         </form>
 
