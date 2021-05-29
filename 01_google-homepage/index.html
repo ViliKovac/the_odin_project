@@ -25,7 +25,7 @@
 
                 <li><a href="#">Images</a></li>
 
-                <li><a id="app-icon" href="https://www.google.com/intl/en/about/products?tab=wh" title="apps" class="material-icons">apps</a></li>
+                <li id="app-li"><a id="app-icon" href="https://www.google.com/intl/en/about/products?tab=wh" title="apps" class="material-icons">apps</a></li>
 
                 <li>
 
@@ -42,10 +42,16 @@
         <img class="google-image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
 
         <form class="search-form" action="search">
-            <input type="search" placeholder="Search..." name="search-bar" id="search-bar">
-            <button>
+            <button class="search-icon" disabled>
                 <img
-                  class="icon"
+                  src="images/google-search.png"
+                  alt="search"
+                />
+              </button>
+            <input type="text" placeholder="Search" onfocus="this.placeholder = ''">
+
+            <button class="mic-icon">
+                <img
                   src="images/google-microphone.png"
                   alt="mic"
                 />
