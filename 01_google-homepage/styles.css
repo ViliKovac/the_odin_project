@@ -1,110 +1,126 @@
-                        /*all*/
-
-* {
-        box-sizing: border-box;
-}
-
-body{
-   margin: 0;
-   padding: 0;
-}
-
-button{
-    display: inline;
-    border: none;
-    background-color:#F5f5f5;
-    padding: .8vw;
-   
-    border-style: solid;
-    border-color: #F5f5f5;
-    border-radius: 4px;
-}
-
-button:hover{
-   box-shadow: black;
-   
-   
-}
-
-                    /*------------------*/
-
-
-                          /*header*/
-
-
-header{
-    width:100%;
-}
-header nav ul{
-    list-style-type: none;
-    
-    
-}
-
-nav li{
-    display: inline-block;
-  
-    padding: 8px;
-}
-
-nav li a{
-    text-decoration: none;
-    color: black;
-}
-
-
-.h-left-ul{
-    float: left;
-}
-            
-.h-right-ul{
-    float: right;
-}
-
-                            /*main*/
-
-
-main{
-    padding-top: 25vh;
-    text-align: center; /*centrira input*/
-    margin-bottom: 20vh;
-}
-
-.google-image  { 
-display: block;
-margin-left: auto;              
-margin-right: auto;                      
-
-}
-
-
-#search-bar{
-box-sizing: border-box;    
-width: 50vw;
-padding-top: 1vh;
-padding-bottom: 1vh;
-padding-left: 0.5vw;
-}
-
-#search-bar input:hover{
-    box-shadow: 8px 20px;
-}
-
-.search-buttons{
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    display: inline-block;
-}
-
-                    /*------------------*/
-
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-    background-color: #F5f5f5;
-    
-}
-
-                    
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        /*all*/
+        
+        *,
+         ::before,
+         ::after {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        /*-------------------------------------------*/
+        
+        button {
+            background-color: #F5f5f5;
+            margin: none;
+            padding: .8vw;
+        }
+        
+        .search-button {
+            border: transparent;
+        }
+        
+        .search-button:hover {
+            color: black;
+            background-color: #f5f5f577;
+        }
+        
+        button:focus {
+            outline: none;
+        }
+        /*
+navigation
+*/
+        
+        nav li {
+            display: inline-block;
+            padding: 8px;
+            vertical-align: middle;
+            /*da icona i sve bude allign*/
+        }
+        
+        nav li a {
+            text-decoration: none;
+            font: inherit;
+            color: rgba(0, 0, 0, 0.664);
+        }
+        /*---- HEADER ----*/
+        
+        header {
+            position: static;
+            width: 100%;
+            height: fit-content;
+            overflow: auto;
+            /*fox collapse caused by float*/
+        }
+        
+        header nav {
+            position: static;
+        }
+        
+        .signin-button {
+            font-weight: 200;
+            color: #F5f5f5;
+            background: #4384f4;
+        }
+        /*-------------------------------------------*/
+        /*MAIN*/
+        
+        main {
+            display: block;
+            position: static;
+            width: 100%;
+            /*centrira input*/
+            padding-top: 18vh;
+        }
+        
+        .google-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #search-bar {
+            width: 50vw;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            padding-left: 0.5vw;
+        }
+        
+        .search-buttons {
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+        }
+        
+        button:nth-of-type(1n+2) {
+            margin-left: 2vw;
+        }
+        
+        .language {
+            margin-top: 2vh;
+        }
+        /*FOOTER*/
+        
+        footer {
+            float: right;
+            /*fix collapse*/
+            position: absolute;
+            width: 100%;
+            background-color: #f2f3f3;
+            border-top: solid;
+            border-color: #f2f3f300;
+            bottom: 0;
+        }
+        
+        .right-ul {
+            float: right;
+        }
+        
+        .left-ul {
+            float: left;
+        }

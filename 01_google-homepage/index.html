@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Google</title>
     <!-- referenca https://web.archive.org/web/20191130234759if_/https://www.google.com/ -->
 </head>
@@ -14,50 +15,78 @@
 
         <nav>
 
-                <ul class="h-left-ul">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Store</a></li>
-                </ul>            
+            <ul class="left-ul">
+                <li><a href="#About">About</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
 
-                <ul class="h-right-ul">
-                    <li><a href="#">Gmail</a></li>
+            <ul class="right-ul">
+                <li><a href="#">Gmail</a></li>
 
-                    <li><a href="#">Images</a></li>
+                <li><a href="#">Images</a></li>
 
-                    <li>Crtez</li>
+                <li><a id="app-icon" href="https://www.google.com/intl/en/about/products?tab=wh" title="apps" class="material-icons">apps</a></li>
 
-                    <li><button>Sign In</button></li>
+                <li>
 
-                </ul>
+                    <form action="Sing In"><button class="signin-button" type="button">Sign In</button></form>
+                </li>
 
+            </ul>
         </nav>
 
     </header>
 
 
     <main>
-        <img class="google-image"
-            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <img class="google-image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
 
-        <form action="search">
+        <form class="search-form" action="search">
             <input type="search" placeholder="Search..." name="search-bar" id="search-bar">
-        
+            <button>
+                <img
+                  class="icon"
+                  src="images/google-microphone.png"
+                  alt="mic"
+                />
+              </button>
 
-        
+
+
         </form>
 
-        <div class="search-buttons">
-            <button type="submit">Google Search</button>
-            <button type="button">I'm feeling lucky</button>
-        </div>
+        <form class="search-buttons">
 
-        <p>Google offered in: <a href="www.google.hr">hrvatski</a></p>
+            <button class="search-button">Google Search</button>
+            <button class="search-button">I'm feeling lucky</button>
+
+        </form>
+
+        <div class="language">
+            <p>Google offered in:
+                <a href="http://www.google.hr" target="_blank">hrvatski</a>
+            </p>
+
+        </div>
 
     </main>
 
-<footer>
-    treba napraviti listu
-</footer>
+    <footer>
+        <nav>
+            <ul class="left-ul">
+                <li><a href="#Avertising">Avertising</a></li>
+                <li><a href="#Avertising">Business</a></li>
+                <li><a href="#How Search works">How Search works</a></li>
+            </ul>
+
+            <ul class="right-ul">
+                <li><a href="#Privacy">Privacy</a></li>
+                <li><a href="#Terms">Terms</a></li>
+                <li><a href="#Settings">Settings</a></li>
+            </ul>
+        </nav>
+
+    </footer>
 
 </body>
 
